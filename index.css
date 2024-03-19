@@ -38,6 +38,24 @@ textarea {
     resize: none;
 }
 
+#from-to-container {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+input {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 50%;
+    background-color: #444059;
+    color: #8F8F8F;
+}
+
 button {
     font-family: "Josefin Sans", sans-serif;
     font-size: 22px;
@@ -45,7 +63,7 @@ button {
     background-color: #28A9F1;
     border: none;
     border-radius: 8px;
-    margin-top: 13px;
+    margin-top: 3px;
     padding: 15px 0 10px;
 }
 
@@ -65,11 +83,22 @@ ul {
     margin: 0;
 }
 
+#likes-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul p {
+    color: #1B1924;
+    font-size: 14px;
+    margin: 3px 0 ;
+}
+
 ul li {
     font-family: "Inter", sans-serif;
     color: 1B1924;
     background-color: #FFFFFF;
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
     border: none;
     text-align: left;  
