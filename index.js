@@ -83,5 +83,11 @@ function appendItemtoEndorsementListEL(item) {
             )
     })
     
+    newEl.addEventListener("dblclick", function() {
+        let locationOfItemInDb = ref(database, `endorsementList/${itemId}`)
+        
+        remove(locationOfItemInDb)
+    })
+    
     endorsementListEL.append(newEl)
 }
