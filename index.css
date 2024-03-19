@@ -18,7 +18,15 @@ html, body {
     flex-direction: column;
     max-width: 500px;
     min-width: 320px;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
+}
+
+.endorsement-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    min-width: 320px;
+    margin: 0px auto;
 }
 
 @media screen and (max-width: 800px){
@@ -26,6 +34,9 @@ html, body {
         display: inline-block;
     }
     .container {
+        max-width: 270px;
+    }
+    .endorsement-container  {
         max-width: 270px;
     }
     ul::-webkit-scrollbar {
@@ -93,7 +104,7 @@ p {
     font-size: 20px;
     font-weight: bold;
     color: #FFFFFF;
-    margin: 25px;
+    margin: 20px;
 }
 
 ul {
