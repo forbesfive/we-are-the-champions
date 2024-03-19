@@ -10,17 +10,22 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div id="container">
-            <img src="assets/freddie.png">
-            <h1>We are the Champions</h1>
-            <textarea id="input-field" placeholder="Write your endorsement here"></textarea>
-            <div id="from-to-container">
-                <input id="from-input-field" placeholder="From">
-                <input id="to-input-field" placeholder="To">
+        <div class="main">
+            <div class="container">
+                <img src="assets/freddie.png">
+                <h1>We are the Champions</h1>
+                <textarea id="input-field" placeholder="Write your endorsement here"></textarea>
+                <div id="from-to-container">
+                    <input id="from-input-field" placeholder="From">
+                    <input id="to-input-field" placeholder="To">
+                </div>
+                <button id="add-button">Publish</button>
             </div>
-            <button id="add-button">Publish</button>
-            <p>- Endorsements -</p>
-            <ul id="endorsement-list"></ul>
+            <div class="container">
+                <p>- Endorsements -</p>
+                <ul id="endorsement-list"></ul>
+            </div>
+            </div>
         </div>
         <script src="index.js" type="module"></script>
     </body>

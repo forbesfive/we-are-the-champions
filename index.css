@@ -1,17 +1,36 @@
 html, body {
     margin: 0;
-    padding: 0;
+    padding: 25px 0 0 0 ;
     background-color: #111827;
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
     user-select: none;
 }
 
-#container {
+.main {
+    display: flex;
+    gap: 25px;
+    padding: 0 50px;
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
-    margin: 50px auto;
+    max-width: 500px;
+    min-width: 320px;
+    margin: 0px auto;
+}
+
+@media screen and (max-width: 800px){
+    .main {
+        display: inline-block;
+    }
+    .container {
+        max-width: 320px;
+    }
+    ul::-webkit-scrollbar {
+        display: none;
+      }
 }
 
 img {
@@ -22,8 +41,6 @@ img {
 h1 {
     font-size: 25px;
     color: #FFFFFF;
-    max-width: 320px;
-    /* border: 1px solid red; */
 }
 
 textarea {
@@ -86,6 +103,8 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow-y: auto;
+    max-height: 500px
 }
 
 #likes-container {
