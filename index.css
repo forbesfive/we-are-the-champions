@@ -103,3 +103,8 @@ ul li {
     border: none;
     text-align: left;  
 }
+
+ul li:hover {
+    background-color: #28A9F1;
+    cursor: pointer;
+}
